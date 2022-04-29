@@ -1,0 +1,5 @@
+export enum TRANSACTION_TYPE {
+  SEND = 'SEND',
+  RECEIVE = 'RECEIVE',
+  CONVERT = 'CONVERT',
+}
