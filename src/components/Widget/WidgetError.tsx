@@ -2,12 +2,28 @@ import { MdErrorOutline } from 'react-icons/md';
 import styled from 'styled-components';
 
 const WidgetErrorWrapper = styled.div`
-  font-size: 128px;
+  cursor: pointer;
+  text-align: center;
+
+  svg {
+    font-size: 128px;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 36px;
+  }
 `;
-const WidgetError = () => {
+
+type WidgetErrorProps = {
+  resetErrorBoundary: () => void;
+};
+
+const WidgetError = ({ resetErrorBoundary }: WidgetErrorProps) => {
   return (
-    <WidgetErrorWrapper>
+    <WidgetErrorWrapper onClick={resetErrorBoundary}>
       <MdErrorOutline />
+      <button>Reset</button>
     </WidgetErrorWrapper>
   );
 };
