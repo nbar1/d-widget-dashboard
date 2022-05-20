@@ -23,7 +23,7 @@ const WidgetError = ({ resetErrorBoundary }: WidgetErrorProps) => {
   return (
     <WidgetErrorWrapper onClick={resetErrorBoundary}>
       <MdErrorOutline />
-      <button>Reset</button>
+      <button>Reload Application</button>
     </WidgetErrorWrapper>
   );
 };

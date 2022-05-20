@@ -2,8 +2,8 @@ import React, { Suspense, useContext } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import WidgetLoader from './WidgetLoader';
-import { WidgetContext } from './WidgetContext';
 import WidgetError from './WidgetError';
+import { WidgetContext } from './WidgetContext';
 import { availableWidgets } from '../helpers/availableWidgets';
 
 const Widget = () => {

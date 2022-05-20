@@ -15,4 +15,9 @@ export const availableWidgets: Widget[] = [
     path: 'text-input',
     componentPath: 'TextInput',
   },
+  {
+    name: 'Interval Timer',
+    path: 'interval-timer',
+    componentPath: 'IntervalTimer',
+  },
 ];
